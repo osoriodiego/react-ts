@@ -29,8 +29,8 @@ export const User = () => {
         <p>User: {user && JSON.stringify(user)}</p>
       </div>
       <div>
-        <button onClick={login}>login</button>
-        <button onClick={reset}>clear</button>
+        <button onClick={reset} className="btn btn-secondary">clear</button>
+        <button onClick={login} className="btn btn-primary">login</button>
       </div>
     </>
   );
