@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-export const useForm = <T extends Record<string, string | number | boolean>>( initialState: T) => {
+// export const useForm = <T extends Record<string, string | number | boolean>>( initialState: T) => {
+export const useForm = <T extends object>(initialState: T) => {
   const [formData, setFormData] = useState(initialState);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

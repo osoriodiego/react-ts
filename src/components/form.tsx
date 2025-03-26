@@ -25,6 +25,7 @@ export const Form = () => {
   const { formData, handleChange, handleSubmit } = useForm({
     name: "default name",
     email: "default email",
+    phone: 1234567890,
     pass: "",
   });
 
@@ -62,6 +63,22 @@ export const Form = () => {
             onChange={handleChange}
             placeholder="Enter your email"
             value={formData.email}
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            htmlFor="email"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
+            Phone
+          </label>
+          <input
+            id="phone"
+            name="phone"
+            type="text"
+            onChange={handleChange}
+            placeholder="Enter your phone number"
+            value={formData.phone}
           />
         </div>
         <div className="mb-4">
